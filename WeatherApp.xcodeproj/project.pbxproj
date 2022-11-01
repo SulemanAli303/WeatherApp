@@ -539,7 +539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NRUJ9KXDL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = WeatherApp/AppFiles/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather App need Location access to show Weather History";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Weather App need Location access to show Weather History";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather App need Location access to show Weather History";
@@ -570,7 +570,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NRUJ9KXDL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = WeatherApp/AppFiles/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather App need Location access to show Weather History";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Weather App need Location access to show Weather History";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather App need Location access to show Weather History";
