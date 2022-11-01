@@ -18,7 +18,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     private let geoCoder = CLGeocoder()
     private(set) var latestPlaceMark: CLPlacemark?
     private (set) var currentCity:String = ""
-    var onLatestPlaceMarkUpdate: (() -> ())?
+    var onLatestPlaceMarkUpdate: ((_ currentCity:String) -> ())?
     var shouldStopOnUpdate: Bool = true
     func start() {
         locationManager.requestWhenInUseAuthorization()
@@ -37,8 +37,9 @@ class LocationService: NSObject, CLLocationManagerDelegate {
                 self?.latestPlaceMark = placeMark
                 if let city = placeMark.locality,let country = placeMark.country {
                     self?.currentCity = city + ", " + country
+                    self?.onLatestPlaceMarkUpdate?(city + "," + country)
                 }
-                self?.onLatestPlaceMarkUpdate?()
+                
                 if self?.shouldStopOnUpdate ?? false {
                     self?.stop()
                 }
